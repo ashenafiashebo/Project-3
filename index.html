@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="Stylesheet" href="css/responsive.css">
+ 
+    </head>
+    <body>
+
+    <div class="banner">
+      <h1>THE CODE REVIEW</h1>
+    </div>
+
+      <form action="index.html" method="post">
+       
+      <h2>Signup for our newsletter</h2>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
+
+      <hr class= "big">
+      <hr class="small">
+
+        
+       <fieldset>
+         
+              <legend><span class="number">1</span>Contact Information</legend>
+
+              <label class="fre" for="name">Full Name</label>
+              <input type="text" id="name" name="user_name"  placeholder="Requered" class="subdomain" ><br>
+
+            
+              <label class="fre" for="mail">Email Address</label>
+              <input type="text" id="mail" name="user_mail" placeholder="Requered" class="subdomain" ><br>
+             
+              <label class="fre" for="phone#">Phone Number</label>
+              <input type="text" id="phone#" name="user_phone_number"  placeholder="Phone" class="subdomain" ><br>
+
+              <label class="fre" for="street_address">Street Address</label>
+              <input type="text" id="street_address" name="user_street_address"  placeholder="street" class="subdomain" ><br>
+
+              <label class="fre" for="city">City</label>
+              <input type="text" id="city" name="user_city"  placeholder="Calgary" class="subdomain" ><br>
+
+              <label class="fre" for="state">State</label>
+              <select id="state" name="user_state" >
+                    <optgroup label="State">
+                     
+                      <option value="ChooseState">Choose State</option>
+                      <option value="DC">DC</option>
+                      <option value="AZ">AZ</option>
+                      <option value="CO">CO</option>
+                      <option value="TX">TX</option>
+                      <option value="CA">CA</option>
+                      <option value="FL">FL</option>
+                    </optgroup>
+                    
+              </select><br>
+
+              <label class="fre" for="zip_code">Zip Code</label>
+              <input type="text" id="zip_code" name="user_name" style="width: 200px"  placeholder="zip" class="subdomain" >
+             
+
+       </fieldset> 
+
+      
+
+         <hr>
+
+
+
+             <fieldset> 
+     
+         
+                   <legend><span class="number">1</span>Newsletter</legend>
+                  
+                   <h4>Select the newsletter you would like to recieve</h4>
+                   
+                       <input type="checkbox" id="development" value="interest_development" name="user_interest">
+                       <label class="light" for="development">HTML</label><br>
+                       <input type="checkbox" id="design" value="interest_design" name="user_interest">
+                       <label class="light" for="design">CSS</label><br>
+                       <input type="checkbox" id="business" value="interest_business" name="user_interest">
+                       <label class="light" for="business">JavaScript</label>
+                      
+                  <h4>Newsletter Format</h4> 
+                       <input type="radio" id="html" value="interest_development" name="user_interest">
+                       <label class="light" for="development">HTML</label><br>
+                       <input type="radio" id="plaintext" value="interest_design" name="user_interest">
+                       <label class="light" for="design">Plain Text</label><br>
+
+            </fieldset>
+      
+
+             <h4>Other topics you'd like to hear about</h4> 
+             <textarea id="bio" name="user_bio"></textarea>
+        
+        <button type="submit">Sign Up</button>
+         
+      </form>
+
+     
+
+      <form action="index.html" method="post">
+
+             <fieldset>
+              <legend><span class="number">1</span>Leave your feedback here</legend>
+
+                  
+                  <label class="fre" for="name">Name:</label> 
+                  <input type="text" name="name" id="Name" value="" />
+                  <label class="fre" for="e-mail">Email:</label> 
+                  <input type="text" name="email" id="e-mail" value="" />
+                  <label class="fre" for="pwd">Password:</label> 
+                  <input type="password" name="pwd" id="pwd" value="" />
+
+           </fieldset>
+
+           <fieldset>
+           
+             <h4>Please check all the emotions that apply to you:</h4>
+                  <input  type="checkbox" name="angry" id="angry" value="angry">
+                  <label class="light" for="angry">Angry</label> <br>
+                  <input type="checkbox" name="sad" id="sad" value="sad">
+                  <label class="light" for="sad">Sad</label><br> 
+                  <input type="checkbox" name="happy" id="happy" value="happy">
+                  <label class="light" for="happy">Happy</label> <br>
+                  <input type="checkbox" name="ambivalent" id="ambivalent" value="ambivalent">
+                  <label class="light" for="ambivalent">Ambivalent</label> 
+                  
+            
+              <h4>How satisfied were you with our service?</h4>
+                 <input type="radio" name="satisfaction" id="vsat" value="vsat">
+                 <label class="light" for="vsat">Very satisfied</label> <br>
+                 <input type="radio" name="satisfaction" id="sat" value="sat">
+                 <label class="light" for="sat">Satisfied</label><br> 
+                 <input type="radio" name="satisfaction" id="dcare" value="dcare">
+                 <label class="light" for="dcare">Didn't care</label> <br>
+                 <input type="radio" name="satisfaction" id="disat" value="disat">
+                 <label class="light" for="disat">Dissatisfied</label> <br>
+                 <input type="radio" name="satisfaction" id="vdisat" value="vdisat">
+                 <label class="light" for="vdisat">Very dissatisfied</label> 
+                 
+               </fieldset>
+             
+              <h4>Further comments:</h4> 
+              <textarea name="comments" id="comments" cols="25" rows="3"></textarea>
+           
+              
+         <fieldset>
+              <label class="light" for="photo">Bio photo:</label> 
+              <input type="file" name="photo" id="photo"  /><br>
+              <label class="light" for="location">Location visited:</label>
+              <select name="location" id="location" >
+                <optgroup label="location">
+                    <option value="">Select location</option>
+                    <option value="nyork">New York</option>
+                    <option value="vancouver">Vancouver</option>
+                    <option value="atlantis">Atlantis</option>
+                    <option value="alpha">Alpha Centauri</option>
+                    <option value="blackpool">Blackpool</option>
+                    <option value="bognor">Bognor Regis</option>
+                 </optgroup>
+              </select><br>
+           
+         </fieldset>
+
+            <input type="submit" value="submit" />
+
+      </form>
+
+     
+
+
+     <footer> <p>Copyright the code review</p></footer>
+
+     <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+      
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
