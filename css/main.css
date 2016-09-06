@@ -108,12 +108,56 @@ input[type="checkbox"] {
   margin: 0 4px 8px 0;
 }
 
+input[type=text] {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 5px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+
+
+input[type=text]:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+  background: #0065b1;
+}
+
+input[type=submit]{
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color:#0065b1;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  margin-left: 4.5em;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+
+}
+
+input[type=file]{
+
+height: 32px;
+margin-bottom: 10px;
+
+}
+
+
 select {
   padding: 6px;
   height: 32px;
   border-radius: 2px;
   display: block;
- width: 60%;
+  width: 60%;
  
 }
 
@@ -145,47 +189,7 @@ legend {
   margin-bottom: 10px;
 }
 
-input[type=text] {
-  -webkit-transition: all 0.30s ease-in-out;
-  -moz-transition: all 0.30s ease-in-out;
-  -ms-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out;
-  outline: none;
-  padding: 3px 5px 3px 3px;
-  margin: 5px 1px 3px 0px;
-  border: 1px solid #DDDDDD;
-}
- 
-input[type=text]:focus {
-  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-  padding: 3px 0px 3px 3px;
-  margin: 5px 1px 3px 0px;
-  border: 1px solid rgba(81, 203, 238, 1);
-  background: #0065b1;
-}
 
-input[type=submit]{
-  padding: 19px 39px 18px 39px;
-  color: #FFF;
-  background-color:#0065b1;
-  font-size: 18px;
-  text-align: center;
-  font-style: normal;
-  border-radius: 5px;
-  margin-left: 4.5em;
-  border: 1px solid #3ac162;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-  margin-bottom: 10px;
-
-}
-
-input[type=file]{
-
-height: 32px;
-margin-bottom: 10px;
-
-}
 label.light {
   font-weight: 300;
   display: inline;
